@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="888.0" prefWidth="926.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrderedEventList">
+    <children>
+        <ScrollPane layoutX="70.0" layoutY="381.0" prefHeight="357.0" prefWidth="775.0" style="-fx-border-color: white; -fx-background-color: #4d8fbfed;">
+            <content>
+                <TextField fx:id="messageContentTextField" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="292.0" promptText="Message content" />
+
+                <FlowPane fx:id="flowpane" hgap="10.0" prefHeight="349.0" prefWidth="698.0" prefWrapLength="${flowpane.width}" style="-fx-border-color: #4d8fbf;" vgap="20.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </FlowPane>
+
+            </content>
+        </ScrollPane>
+        <Text fill="#8ac8f1" layoutX="517.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordered BLOG Items">
+            <font>
+                <Font name="Bauhaus 93" size="43.0" />
+            </font>
+        </Text>
+      <HBox alignment="CENTER" layoutY="733.0" prefHeight="159.0" prefWidth="926.0" spacing="20.0" style="-fx-background-color: #8ac8f1;">
+         <children>
+            <AnchorPane fx:id="rootTotalCustomers" layoutX="230.0" layoutY="10.0" prefHeight="0.0" prefWidth="210.0" style="-fx-background-color: white; -fx-background-radius: 5;" translateY="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="134.0" prefWidth="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label fx:id="labelTotalUsersInblog" text="5000" textFill="#76787c">
+                           <font>
+                              <Font name="System Bold" size="50.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#76787c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Users shared in blogItems">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="rootTotalQuotes" layoutX="330.0" layoutY="10.0" prefHeight="0.0" prefWidth="210.0" style="-fx-background-color: white; -fx-background-radius: 5;" translateY="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="134.0" prefWidth="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label fx:id="labelTotalblogItems" text="5000" textFill="#76787c">
+                           <font>
+                              <Font name="System Bold" size="50.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#76787c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="All blog Items">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="rootProducts" layoutX="480.0" layoutY="10.0" prefHeight="0.0" prefWidth="210.0" style="-fx-background-color: white; -fx-background-radius: 5;" translateY="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="134.0" prefWidth="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label fx:id="labelthisMonthEvents" text="5000" textFill="#76787c">
+                           <font>
+                              <Font name="System Bold" size="50.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#76787c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="items added this month">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="rootRecentQuotes" layoutX="630.0" layoutY="10.0" prefHeight="0.0" prefWidth="210.0" style="-fx-background-color: white; -fx-background-radius: 5;" translateY="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="134.0" prefWidth="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label fx:id="blogItemsbyTitle" text="5000" textFill="#76787c">
+                           <font>
+                              <Font name="System Bold" size="50.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#76787c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="blog items by title">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </HBox>
+      <AnchorPane fx:id="rootSearchMain" layoutX="-8.0" layoutY="307.0" prefHeight="51.0" prefWidth="926.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <children>
+            <TextField fx:id="txtSearchRecent" layoutX="467.0" layoutY="-11.0" prefHeight="51.0" prefWidth="456.0" promptText="Search recent by description ...." style="-fx-background-color: #8ac8f1;" styleClass="text-field-search" AnchorPane.leftAnchor="467.0" AnchorPane.rightAnchor="3.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#76787c" glyphName="SEARCH" layoutX="62.0" layoutY="20.0" size="20" />
+            <TextField fx:id="txtSrch" layoutX="15.0" layoutY="-11.0" prefHeight="51.0" prefWidth="445.0" promptText="Search recent blog Items by Title ........." style="-fx-background-color: #8ac8f1;" styleClass="text-field-search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="#903737" glyphName="FILE" layoutX="305.0" layoutY="247.0" size="30" />
+      <FontAwesomeIconView fx:id="home" fill="#4d8fbf" glyphName="HOME" layoutX="457.0" layoutY="253.0" onMouseClicked="#homeAction" size="50" />
+      <FontAwesomeIconView fx:id="addme" fill="#52a42e" glyphName="PLUS" layoutX="133.0" layoutY="256.0" onDragDetected="#addaction" size="50" />
+      <JFXButton fx:id="export" layoutX="202.0" layoutY="216.0" onAction="#exportAction" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #ff3d3d;" text="ExportPDF" textFill="WHITE" />
+      <JFXButton fx:id="ajouter" layoutX="361.0" layoutY="215.0" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #4d8fbf;" text="Home" textFill="WHITE" />
+      <ImageView fitHeight="181.0" fitWidth="933.0" layoutX="-7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/home-background.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="ajoutertxtblog" layoutX="27.0" layoutY="216.0" onAction="#ajouterActionblog" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: green;" text="Ajouter" textFill="#f5f5f5" />
+    </children>
+</AnchorPane>
